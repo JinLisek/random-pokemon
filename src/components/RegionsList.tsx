@@ -1,4 +1,4 @@
-import Region from "./Region";
+import Region from "./RegionItem";
 import RegionApiData from "./RegionApiData";
 
 interface RegionsListProps {
