@@ -1,10 +1,20 @@
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import { StrictMode } from "react";
+
 import "./App.css";
 import Regions from "./components/Regions";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Regions />,
+  },
+]);
+
 const App = () => (
-  <div className="App">
-    <Regions />
-  </div>
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>
 );
 
 export default App;
