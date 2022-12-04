@@ -1,6 +1,5 @@
 import axios from "axios";
-import { useQuery } from "react-query";
-import { useState, Component } from "react";
+import { Component } from "react";
 import RegionsList from "./RegionsList";
 import RegionApiData from "./RegionApiData";
 
