@@ -2,12 +2,12 @@ import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import { StrictMode } from "react";
 
 import "./App.css";
-import Regions from "./components/RegionsRoot";
+import RegionsRoot from "./components/RegionsRoot";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Regions />,
+    element: <RegionsRoot />,
   },
 ]);
 

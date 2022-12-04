@@ -12,7 +12,7 @@ const getRegions = async () => {
   return resp.data.results;
 };
 
-class Regions extends Component {
+class RegionsRoot extends Component {
   state: RegionsState = {
     regions: [],
   };
@@ -24,4 +24,4 @@ class Regions extends Component {
   render = () => <RegionsList regions={this.state.regions} />;
 }
 
-export default Regions;
+export default RegionsRoot;
