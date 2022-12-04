@@ -3,10 +3,10 @@ interface RegionProps {
   apiUrl: string;
 }
 
-const Region = (props: RegionProps) => (
+const RegionItem = (props: RegionProps) => (
   <li>
     {props.name}: {props.apiUrl}
   </li>
 );
 
-export default Region;
+export default RegionItem;

@@ -1,4 +1,4 @@
-import Region from "./RegionItem";
+import RegionItem from "./RegionItem";
 import RegionApiData from "./RegionApiData";
 
 interface RegionsListProps {
@@ -9,7 +9,7 @@ const RegionsList = (props: RegionsListProps) => {
   return (
     <ul>
       {props.regions.map((region: RegionApiData) => (
-        <Region name={region.name} apiUrl={region.url} key={region.name} />
+        <RegionItem name={region.name} apiUrl={region.url} key={region.name} />
       ))}
     </ul>
   );
