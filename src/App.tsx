@@ -3,6 +3,7 @@ import { StrictMode } from "react";
 
 import "./App.css";
 import RegionsRoot from "./components/RegionsRoot";
+import RegionInfo from "./components/RegionInfo";
 
 const router = createBrowserRouter([
   {
@@ -10,8 +11,8 @@ const router = createBrowserRouter([
     element: <RegionsRoot />,
   },
   {
-    path: "region/:regionName",
-    element: <div>aa</div>,
+    path: "regions/:regionName",
+    element: <RegionInfo />,
   },
 ]);
 
