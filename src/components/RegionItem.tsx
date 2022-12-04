@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
+
 interface RegionProps {
   name: string;
-  apiUrl: string;
 }
 
 const RegionItem = (props: RegionProps) => (
   <li>
-    {props.name}: {props.apiUrl}
+    <Link to={`region/${props.name}`}>{props.name}</Link>
   </li>
 );
 

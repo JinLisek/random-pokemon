@@ -4,12 +4,12 @@ import RegionsList from "./RegionsList";
 import RegionApiData from "./RegionApiData";
 
 interface RegionsState {
-  regions: RegionApiData[];
+  regions: string[];
 }
 
 const getRegions = async () => {
   let resp = await axios.get("http://pokeapi.co/api/v2/region/");
-  return resp.data.results;
+  return resp.data.results.map((region: RegionApiData) => region.name);
 };
 
 class RegionsRoot extends Component {

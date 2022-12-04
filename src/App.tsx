@@ -9,6 +9,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <RegionsRoot />,
   },
+  {
+    path: "region/:regionName",
+    element: <div>aa</div>,
+  },
 ]);
 
 const App = () => (
