@@ -8,15 +8,15 @@ import LocationInfo from "./components/LocationInfo";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/random-pokemon",
     element: <RegionsRoot />,
   },
   {
-    path: "regions/:regionName",
+    path: "/random-pokemon/regions/:regionName",
     element: <RegionInfo />,
   },
   {
-    path: "locations/:locationName",
+    path: "/random-pokemon/locations/:locationName",
     element: <LocationInfo />,
   },
 ]);

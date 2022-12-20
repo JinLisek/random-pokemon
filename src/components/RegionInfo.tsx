@@ -26,7 +26,7 @@ const RegionInfo = () => {
     <ul>
       {locations?.map((location: LocationApiData) => (
         <li>
-          <Link to={`/locations/${location.name}`}>{location.name}</Link>
+          <Link to={`/random-pokemon/locations/${location.name}`}>{location.name}</Link>
         </li>
       ))}
     </ul>

@@ -6,7 +6,7 @@ interface RegionProps {
 
 const RegionItem = (props: RegionProps) => (
   <li>
-    <Link to={`/regions/${props.name}`}>{props.name}</Link>
+    <Link to={`/random-pokemon/regions/${props.name}`}>{props.name}</Link>
   </li>
 );
 

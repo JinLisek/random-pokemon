@@ -4,7 +4,7 @@ import RegionsList from "./RegionsList";
 import RegionApiData from "./RegionApiData";
 
 const getRegions = async () => {
-  let resp = await axios.get("http://pokeapi.co/api/v2/region/");
+  let resp = await axios.get("https://pokeapi.co/api/v2/region/");
   return resp.data.results.map((region: RegionApiData) => region.name);
 };
 
