@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -15,7 +15,7 @@ const getLocations = async (regionName: string) => {
 
 const RegionInfo = () => {
   const { regionName } = useParams();
-  const [locations, setLocations] = useState<LocationApiData[]>();
+  const [locations, setLocations] = useState<LocationApiData[]>([]);
 
   useEffect(() => {
     if (regionName == null) return;
@@ -24,8 +24,10 @@ const RegionInfo = () => {
 
   return (
     <ul>
-      {locations?.map((location) => (
-        <li key={location.name}>{location.name}</li>
+      {locations?.map((location: LocationApiData) => (
+        <li>
+          <Link to={`/locations/${location.name}`}>{location.name}</Link>
+        </li>
       ))}
     </ul>
   );

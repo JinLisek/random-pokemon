@@ -4,6 +4,7 @@ import { StrictMode } from "react";
 import "./App.css";
 import RegionsRoot from "./components/RegionsRoot";
 import RegionInfo from "./components/RegionInfo";
+import LocationInfo from "./components/LocationInfo";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "regions/:regionName",
     element: <RegionInfo />,
+  },
+  {
+    path: "locations/:locationName",
+    element: <LocationInfo />,
   },
 ]);
 

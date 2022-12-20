@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Component, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import RegionsList from "./RegionsList";
 import RegionApiData from "./RegionApiData";
 
